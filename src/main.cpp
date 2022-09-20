@@ -27,22 +27,14 @@
 #include <Arduino.h>
 #include <ad7124.h>
 #include "main.h"
+#include "config.h"
 
-/* constants ================================================================ */
 
 // #define DEBUG
-
-const int ledPin = 53;
-const int ssPin = 10;
-const int motorPin = 8;
-
-const unsigned long measeurementInterval = 10000;
-const unsigned long pauseAfterMotorActivation = 120000;
 
 /* public variables ========================================================= */
 Ad7124Chip adc;
 
-const float setpoint = -0.21;
 unsigned long lastMeasurement = 0;
 unsigned long lastRun = 0;
 
