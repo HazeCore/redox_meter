@@ -73,7 +73,7 @@ void loop(){
         lastMeasurement = millis();
         auto x = isRedoxTooLow();
         if((x && millis() - lastRun > pauseAfterMotorActivation) || (x && lastRun == 0)){
-            activatePumpFor(2000);
+            activatePumpFor(pumpOnTime);
             lastRun = millis();
         } else if (x && millis() - lastRun < pauseAfterMotorActivation){
             logString("WARN", "Redox too low, but pump already activated recently");
