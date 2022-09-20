@@ -1,0 +1,20 @@
+/* This file was automatically generated.  Do not edit! */
+void doOnEveryMotorActivation();
+void doOnEveryMeasurement(double voltage);
+double measureVoltage();
+void activatePumpFor(int ms);
+bool isRedoxTooLow();
+void loop();
+void setupPins();
+void setupADC();
+void logString(String severity,String message);
+void setup();
+extern unsigned long lastRun;
+extern unsigned long lastMeasurement;
+extern const float setpoint;
+extern Ad7124Chip adc;
+extern const unsigned long pauseAfterMotorActivation;
+extern const unsigned long measeurementInterval;
+extern const int motorPin;
+extern const int ssPin;
+extern const int ledPin;
